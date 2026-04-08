@@ -1,0 +1,6 @@
+{
+    "soalan": {
+        "index": "1.command",
+        "command": "{CYAN}kod backup bot.py{RESET}\ncp bot. py storage/downloads/\n\n{CYAN}sebelum padam fail json backup dulu:{RESET}\ncp kod_error.json kod_error.\n\n{CYAN}fail json rosak/error{RESET}\n-fail json jangan 0 byte\n-mesti ada isi sekurangnya kod tulang\n-error sekiranya ada kesalahan pada ayat\n\n{CYAN}cara buat tulang baru diterminal{RESET}\necho '{\"soalan\": {}}' > elektrik.json\n\n{CYAN}jangan save fail kosong setelah padam \nmasukkan tulang dulu baru save\nini akan jadi punca error\n\n{CYAN}Kalau fail baru ada masalah, kau cuma perlu cp elektrik.json.bak elektrik.json untuk dapatkan balik data lama.{RESET}\ncp elektrik.json elektrik.json.bak\n\n{CYAN}tengok isi fail (contoh nama fail){RESET}\ncat elektrik.json\n\n{CYAN}Kalau keluar Error: Dia akan cakap baris mana yang silap. Buka nano elektrik.json dan betulkan.{RESET}\npython -c \"import json; json.load(open('elektrik.json'))\"\n"
+    }
+}

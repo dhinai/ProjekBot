@@ -57,12 +57,8 @@ def muat_data(nama_fail):
         return {"soalan": {}} # Kalau fail tak ada, baru buat baru
 
     try:
-        with open(nama_fail, 'r', encoding='utf-8') as f:
-           teks_mentah = f.read()
-        # Sembelih terus simbol Â dan karakter pelik yang lain
-           teks_bersih = teks_mentah.replace('Â', '').replace('\xa0', ' ')
-           return json.loads(teks_bersih)
-
+        with open(nama_fail, 'r') as f:
+            return json.load(f)
     except json.JSONDecodeError:
         # INI KUNCI DIA: Bagitahu ada error, jangan pulangkan data kosong!
         os.system('clear')
